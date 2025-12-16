@@ -1,0 +1,189 @@
+{
+  "hero": {
+    "title": "Automatisez",
+    "titleHighlight": "sans limites",
+    "description": "Créez des automatisations complexes 10 fois plus rapidement sans lutter contre les APIs. Connectez tout avec Coreway Solution.",
+    "button": "Voir ce que nous faisons"
+  },
+  "trustedBy": {
+    "badge": "Approuvé par",
+    "title": "Équipes Innovantes du Monde Entier"
+  },
+  "numbers": {
+    "title": "Qui Nous Sommes - Coreway Solution",
+    "description": "Chez Coreway Solution, nous aidons les entreprises à concevoir, construire et automatiser des plateformes digitales modernes qui évoluent. Avec plus d'une décennie d'expérience, nous nous spécialisons dans le développement de produits, les applications pilotées par l'IA, les tableaux de bord IoT et l'ingénierie d'infrastructure cloud. Notre équipe apporte une expertise technique approfondie et un état d'esprit axé sur les solutions pour transformer des idées en produits digitaux fiables, sécurisés et performants. Nous nous associons avec des startups, des PME et des entreprises du monde entier pour fournir une technologie qui stimule la croissance, l'efficacité et l'impact à long terme.",
+    "button": "En Savoir Plus Sur Nous",
+    "stats": {
+      "team": "Équipe Mondiale",
+      "experience": "Années d'Expérience",
+      "revenue": "Revenus Générés",
+      "industries": "Industries Servies",
+      "launches": "Magasins / Sites Lancés",
+      "awards": "Récompenses Gagnées"
+    }
+  },
+  "services": {
+    "title": "Nos Services",
+    "description": "Nous comprenons très bien les difficultés des startups et des PME. Pour réduire cette douleur, nous proposons le meilleur ensemble de services pour le WEB, le MOBILE et l'ENTREPRISE avec des technologies de nouvelle génération.",
+    "architect": {
+      "title": "Architecturer",
+      "subtitle": "Planifier. Concevoir. Stratégiser.",
+      "description": "Nous commençons par définir la clarté - traduire vos objectifs commerciaux en plans de système qui évoluent.",
+      "items": [
+        "Architecture Technologique & Système",
+        "Découverte Digitale & Conseil",
+        "Stratégie Cloud & Infrastructure",
+        "Conception d'API & Planification d'Intégration",
+        "Plans d'Expérience UI/UX"
+      ]
+    },
+    "build": {
+      "title": "Construire",
+      "subtitle": "Développer. Intégrer. Déployer.",
+      "description": "Nous concevons des solutions fiables et évolutives - des applications intelligentes aux écosystèmes de plateforme complets.",
+      "items": [
+        "Développement Web & App Personnalisé",
+        "Ingénierie SaaS & Produit",
+        "Tableaux de Bord IoT & Systèmes Temps Réel",
+        "Développement eCommerce",
+        "Déploiement CI/CD & DevOps"
+      ]
+    },
+    "automate": {
+      "title": "Automatiser",
+      "subtitle": "Optimiser. Évoluer. Gérer.",
+      "description": "Nous permettons aux entreprises de fonctionner plus intelligemment avec l'automatisation, l'IA et des flux de travail connectés.",
+      "items": [
+        "Automatisation des Flux de Travail & Processus",
+        "Intégrations Basées sur IA & GPT",
+        "Automatisation des Données & Analytique",
+        "Connecteurs ERP / CRM / Paiement",
+        "Cloud Géré & Support"
+      ]
+    }
+  },
+  "expertise": {
+    "title": "Notre Expertise",
+    "description": "Solutions technologiques qui alimentent la croissance et l'innovation",
+    "areas": {
+      "ai": {
+        "title": "IA & Ingénierie des Données",
+        "description": "Nous créons des systèmes intelligents alimentés par GPT, l'IA Vision et des pipelines de données avancés - permettant des analyses plus intelligentes, l'automatisation et la prise de décision.",
+        "link": "Explorer IA & Données"
+      },
+      "commerce": {
+        "title": "Solutions Commerce",
+        "description": "Nous concevons des plateformes eCommerce et marketplace évolutives - du développement de nouveaux magasins à la replateforme, la croissance omnicanale et l'intégration système.",
+        "link": "Explorer Commerce"
+      },
+      "automation": {
+        "title": "Automatisation & Intégration",
+        "description": "Nous automatisons vos flux de travail et connectons les plateformes - liant paiements, ERP, CRM, logistique et outils marketing en un système intelligent.",
+        "link": "Explorer Automatisation"
+      },
+      "mobile": {
+        "title": "Applications Mobiles & Web",
+        "description": "Nous construisons des applications mobiles et web haute performance avec UX intuitive, frameworks modernes et architecture sécurisée adaptée à vos objectifs.",
+        "link": "Explorer Développement d'Apps"
+      },
+      "analytics": {
+        "title": "Analytique & Insights",
+        "description": "Nous transformons les données en clarté avec des tableaux de bord temps réel, analytique prédictive et suivi de performance pour stimuler une croissance mesurable.",
+        "link": "Explorer Analytique"
+      },
+      "cloud": {
+        "title": "Cloud & DevOps",
+        "description": "Nous concevons des infrastructures cloud fiables, automatisées et sécurisées - assurant déploiement fluide, évolutivité et optimisation des performances.",
+        "link": "Explorer Cloud & DevOps"
+      }
+    }
+  },
+  "cto": {
+    "title": "Engagez-nous pour diriger des",
+    "titleHighlight": "marques à croissance rapide",
+    "titleEnd": "mondiales.",
+    "name": "M. Alpesh Radadiya",
+    "role": "(Directeur de la Technologie)",
+    "description": "M. Alpesh est un directeur de la technologie (CTO) proactif avec plus de 10 ans d'expérience dans l'eCommerce, les applications mobiles et le développement web. Il est connu pour prendre des risques calculés, exploiter les nouvelles avancées technologiques et autonomiser les entreprises mondiales avec des solutions digitales sur mesure.",
+    "button": "Planifier un Appel avec Notre CTO"
+  },
+  "portfolio": {
+    "badge": "Histoires de Succès",
+    "title": "Études de Cas",
+    "subtitle": "Résultats réels de projets réels"
+  },
+  "integrations": {
+    "badge": "Intégrations",
+    "title": "Tout Connecter",
+    "subtitle": "Intégrez de manière transparente les outils que vous utilisez déjà"
+  },
+  "testimonials": {
+    "title": "Aimé par les équipes partout",
+    "items": [
+      {
+        "quote": "Coreway a transformé notre gestion des données clients. Ce qui prenait des heures se fait maintenant automatiquement.",
+        "author": "Sarah Chen",
+        "role": "VP des Opérations",
+        "company": "TechFlow Inc"
+      },
+      {
+        "quote": "La flexibilité de créer des flux de travail personnalisés sans coder a été une révolution pour notre équipe.",
+        "author": "Michael Rodriguez",
+        "role": "Responsable Marketing",
+        "company": "GrowthLabs"
+      },
+      {
+        "quote": "Nous avons réduit le travail manuel de 80% et pouvons nous concentrer sur ce qui compte vraiment - construire de grands produits.",
+        "author": "Emily Watson",
+        "role": "CTO",
+        "company": "InnovateCo"
+      }
+    ]
+  },
+  "industries": {
+    "badge": "Industries",
+    "title": "Qui Nous Servons",
+    "subtitle": "Solutions sur mesure pour divers secteurs",
+    "items": {
+      "healthcare": {
+        "title": "Santé",
+        "description": "Solutions de santé personnalisées"
+      },
+      "retail": {
+        "title": "Commerce de Détail",
+        "description": "Plateformes e-commerce"
+      },
+      "finance": {
+        "title": "Finance",
+        "description": "Solutions fintech sécurisées"
+      },
+      "education": {
+        "title": "Éducation",
+        "description": "Systèmes de gestion de l'apprentissage"
+      },
+      "realEstate": {
+        "title": "Immobilier",
+        "description": "Outils de gestion immobilière"
+      },
+      "manufacturing": {
+        "title": "Fabrication",
+        "description": "IoT et automatisation"
+      }
+    }
+  },
+  "blog": {
+    "badge": "Dernières Perspectives",
+    "title": "Depuis Notre Blog",
+    "subtitle": "Idées et articles sur les tendances technologiques",
+    "readMore": "Lire l'Article",
+    "viewAll": "Voir Tous les Articles"
+  },
+  "cta": {
+    "badge": "Commencez à automatiser aujourd'hui",
+    "title": "Prêt à transformer vos flux de travail?",
+    "description": "Rejoignez des milliers d'équipes utilisant Coreway pour automatiser leur travail et se concentrer sur ce qui compte le plus. Créez des automatisations puissantes en quelques minutes, pas en heures.",
+    "primaryButton": "Commencer gratuitement",
+    "secondaryButton": "Parler aux ventes",
+    "footer": "Aucune carte de crédit requise • Gratuit pour toujours pour les fonctionnalités de base • Annulez à tout moment"
+  }
+}

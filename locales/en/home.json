@@ -1,0 +1,227 @@
+{
+  "hero": {
+    "items": [
+      {
+        "title": "Automate",
+        "titleHighlight": "without limits",
+        "description": "Build complex automations 10x faster without fighting APIs. Connect everything with Coreway Solution.",
+        "button": "See what we do",
+        "button_link": "ai-data/gpt-automation",
+        "image": "/assets/home/coreway-ai.png"
+      },
+      {
+        "title": "Intelligent ",
+        "titleHighlight": "Business",
+        "description": "We design and automate digital services using AI, cloud, and smart engineering. Streamline workflows, cut manual effort, and scale your operations with confidence.",
+        "button": "See what we do",
+        "button_link": "ai-data",
+        "image": "/assets/home/home_page_654.png"
+      },
+      {
+        "title": "AI-Engineered",
+        "titleHighlight": "Simplicity",
+        "description": "We turn complex digital challenges into seamless experiences. Smarter architecture. Faster delivery. Better outcomes for your business.",
+        "button": "See what we do",
+        "button_link": "ai-data",
+        "image": "/assets/home/coreway-ai-3.png"
+      }
+    ]
+  },
+  "trustedBy": {
+    "badge": "Trusted by",
+    "title": "Innovative Teams Worldwide"
+  },
+  "numbers": {
+    "title": "Who We are - Coreway Solution",
+    "description": "At Coreway Solution, we help businesses architect, build, and automate modern digital platforms that scale. With over a decade of experience, we specialize in product development, AI-driven applications, IoT dashboards, and cloud infrastructure engineering. Our team brings deep technical expertise and a solution-first mindset to turn ideas into reliable, secure, and high-performance digital products.We partner with startups, SMBs, and enterprises across the world—delivering technology that drives growth, efficiency, and long-term impact.",
+    "button": "Learn More About Us",
+    "stats": {
+      "team": "Global Team",
+      "experience": "Years of Experience",
+      "revenue": "Revenue Empowered",
+      "industries": "Industries Served",
+      "launches": "Stores / Sites Launched",
+      "awards": "Awards Won"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "description": " We help businesses plan, build, and automate modern digital systems using AI-driven workflows, strong cloud architecture, and reliable engineering. From strategy and development to automation and integration, our services are designed to deliver scale, efficiency, and long-term technical clarity.",
+    "architect": {
+      "title": "Architect",
+      "subtitle": "Plan. Design. Strategize.",
+      "description": "We start by defining clarity — translating your business goals into system blueprints that scale.",
+      "items": [
+        "Technology & System Architecture",
+        "Digital Discovery & Consulting",
+        "Cloud & Infrastructure Strategy",
+        "API Design & Integration Planning",
+        "UI/UX Experience Blueprints"
+      ]
+    },
+    "build": {
+      "title": "Build",
+      "subtitle": "Develop. Integrate. Deploy.",
+      "description": "We engineer reliable, scalable solutions — from intelligent apps to complete platform ecosystems.",
+      "items": [
+        "Custom Web & App Development",
+        "SaaS & Product Engineering",
+        "IoT Dashboards & Realtime Systems",
+        "eCommerce Development",
+        "CI/CD & DevOps Deployment"
+      ]
+    },
+    "automate": {
+      "title": "Automate",
+      "subtitle": "Optimize. Scale. Manage.",
+      "description": "We enable businesses to run smarter with automation, AI, and connected workflows.",
+      "items": [
+        "Workflow & Process Automation",
+        "AI & GPT-based Integrations",
+        "Data & Analytics Automation",
+        "ERP / CRM / Payment Connectors",
+        "Managed Cloud & Support"
+      ]
+    }
+  },
+  "expertise": {
+    "title": "Our Expertise",
+    "description": "Technology-driven solutions that power growth and innovation",
+    "areas": {
+      "ai": {
+        "title": "AI & Data Engineering",
+        "description": "We build intelligent systems using GPT, Vision AI, and secure data pipelines — enabling automation, smarter analytics, and faster decision-making.",
+        "link": "Explore AI & Data"
+      },
+      "commerce": {
+        "title": "Commerce Solutions",
+        "description": "]We design scalable eCommerce and marketplace architectures — from new store builds to replatforming, omnichannel growth, and seamless integrations",
+        "link": "Explore Commerce"
+      },
+      "automation": {
+        "title": "Automation & Integration",
+        "description": "We automate workflows and connect your platforms — ERP, CRM, payments, logistics, marketing, and custom systems — into one intelligent, unified experience.",
+        "link": "Explore Automation"
+      },
+      "mobile": {
+        "title": "Mobile & Web Applications",
+        "description": "We build high-performance mobile and web apps with intuitive UX, modern frameworks, and secure, scalable architecture tailored to your goals.",
+        "link": "Explore App Development"
+      },
+      "analytics": {
+        "title": "Analytics & Insights",
+        "description": "We turn data into clarity using real-time dashboards, predictive analytics, and performance tracking — helping teams make informed, measurable decisions.",
+        "link": "Explore Analytics"
+      },
+      "cloud": {
+        "title": "Cloud & DevOps",
+        "description": "We design secure, automated, high-availability cloud infrastructures — ensuring smooth deployment, scalability, observability, and cost efficiency",
+        "link": "Explore Cloud & DevOps"
+      }
+    }
+  },
+  "cto": {
+    "title": "Hire us to lead globally",
+    "titleHighlight": "fast-growing",
+    "titleEnd": "brands.",
+    "name": "Mr. Alpesh Radadiya",
+    "role": "( Coreway Leadership Team )",
+    "description": "Our leadership team brings over a decade of experience in software engineering, AI automation, cloud strategy, and large-scale digital transformation. We work closely with clients to ensure every project is guided by strong technical direction, clear communication, and a future-ready architecture. With deep expertise in AI-driven development, automation workflows, cloud infrastructure, and scalable digital solutions, our team brings a solution-focused mindset that helps your product evolve, adapt, and grow with your business.",
+    "button": "Connect with an Expert"
+  },
+  "portfolio": {
+    "badge": "Success Stories",
+    "title": "Case Studies",
+    "subtitle": "Real results from real projects"
+  },
+  "integrations": {
+    "badge": "Integrations",
+    "title": "Connect Everything",
+    "subtitle": "Seamlessly integrate with the tools you already use"
+  },
+  "testimonials": {
+    "title": "Loved by teams everywhere",
+    "items": [
+      {
+        "quote": "My name is TY Smith from Digital Delux and we worked with Coreway Solution for about an year now. Their technical knowledge, their knowledge of the web and programming, their business logic knowledge and general troubleshooting knowledge have really made them an important assets for us as a company.",
+        "author": "TY Smith",
+        "role": "",
+        "company": ""
+      },
+      {
+        "quote": "At Rightsify we've been working with Coreway Solution for a couple years now and have been really happy with the results they have delivered. Their work is done on time and as specified and the support has always been great. From landing pages to complex web applications their skill sets…",
+        "author": "Alex Bestall",
+        "role": "",
+        "company": ""
+      },
+      {
+        "quote": "Hi My name is Randon Rollocks,web developer and director in digitall limited.I would like to take opportunity to say that quality service offered by corewaysolution has an impressive.coreway solution has excellent knowledge of web development and also have good web experience.I love your support.Del",
+        "author": "Randon Rollocks",
+        "role": "",
+        "company": ""
+      }
+    ]
+  },
+  "industries": {
+    "badge": "Industries",
+    "title": "Who We Serve",
+    "subtitle": "Tailored solutions for diverse sectors",
+    "items": {
+      "healthcare": {
+        "title": "Healthcare",
+        "description": "Custom healthcare solutions"
+      },
+      "retail": {
+        "title": "Retail",
+        "description": "E-commerce platforms"
+      },
+      "finance": {
+        "title": "Finance",
+        "description": "Secure fintech solutions"
+      },
+      "education": {
+        "title": "Education",
+        "description": "Learning management systems"
+      },
+      "realEstate": {
+        "title": "Real-estate",
+        "description": "Property management tools"
+      },
+      "manufacturing": {
+        "title": "Manufacturing",
+        "description": "IoT and automation"
+      },
+        "food": {
+    "title": "Food & Restaurants",
+    "description": "Smart ordering and delivery solutions"
+  },
+  "shopping": {
+    "title": "Shopping",
+    "description": "Modern online and in-store shopping systems"
+  },
+  "homeDecor": {
+    "title": "Home Décor",
+    "description": "Interior design and décor platforms"
+  },
+  "fashion": {
+    "title": "Fashion",
+    "description": "Trendy fashion and apparel solutions"
+  }
+    }
+  },
+  "blog": {
+    "badge": "Latest Insights",
+    "title": "From Our Blog",
+    "subtitle": "Insights and articles on tech trends",
+    "readMore": "Read Article",
+    "viewAll": "View All Articles"
+  },
+  "cta": {
+    "badge": "Start automating today",
+    "title": "Ready to transform your workflows?",
+    "description": "Join thousands of teams using Coreway to automate their work and focus on what matters most. Build powerful automations in minutes, not hours.",
+    "primaryButton": "Let’s Connect",
+    "secondaryButton": "Talk to sales",
+    "footer": "• Zero-Cost Project Estimation • Architecture Guidance at No Charge • Flexible & Scalable Development Models"
+  }
+}

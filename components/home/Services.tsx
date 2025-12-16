@@ -1,0 +1,175 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { Check } from "lucide-react";
+// import AnimatedIcon from "./AnimatedIcon"; // Removed as we are using static images now
+
+export const services = [
+  {
+    imagePath: "/assets/home/architech.png", // Updated path
+    ariaLabel: "Blueprint showing system architecture with connected nodes and grid structure",
+    title: "Architect",
+    subtitle: "Plan. Design. Strategize.",
+    description:
+      "We start by defining clarity — translating your business goals into system blueprints that scale.",
+    items: [
+      "Technology & System Architecture",
+      "Digital Discovery & Consulting",
+      "Cloud & Infrastructure Strategy",
+      "API Design & Integration Planning",
+      "UI/UX Experience Blueprints",
+    ],
+  },
+  {
+    imagePath: "/assets/home/build.png", // Updated path
+    ariaLabel: "Code brackets with animated lines representing software development",
+    title: "Build",
+    subtitle: "Develop. Integrate. Deploy.",
+    description:
+      "We engineer reliable, scalable solutions — from intelligent apps to complete platform ecosystems.",
+    items: [
+      "Custom Web & App Development",
+      "SaaS & Product Engineering",
+      "IoT Dashboards & Realtime Systems",
+      "eCommerce Development",
+      "CI/CD & DevOps Deployment",
+    ],
+  },
+  {
+    imagePath: "/assets/home/automate.png", // Updated path
+    ariaLabel: "Infinity loop symbol representing continuous automation and optimization",
+    title: "Automate",
+    subtitle: "Optimize. Scale. Manage.",
+    description:
+      "We enable businesses to run smarter with automation, AI, and connected workflows.",
+    items: [
+      "Workflow & Process Automation",
+      "AI & GPT-based Integrations",
+      "Data & Analytics Automation",
+      "ERP / CRM / Payment Connectors",
+      "Managed Cloud & Support",
+    ],
+  },
+];
+
+export default function Services() {
+  return (
+    <section className="relative bg-gradient-to-b from-[#0E0918] via-[#1a1325] to-[#0E0918] min-h-[90vh] flex items-center py-16 overflow-hidden">
+      {/* Trending background gradient circles */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse-slow"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-violet-500/10 rounded-full blur-3xl animate-pulse-slow"></div>
+      </div>
+
+      <div className="relative z-10 max-w-1440 mx-auto px-6 md:px-12 w-full">
+        {/* Section header */}
+        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+
+          {/* Left Side: Heading + Text */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.8 }}
+            className="space-y-6"
+          >
+            <div className="inline-block px-4 py-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full">
+              <span className="text-sm font-medium text-gray-300">What We Do</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-white">
+              Our Services
+            </h2>
+            <p className="text-lg text-gray-300 leading-relaxed max-w-md">
+              From strategy to automation — we engineer complete digital ecosystems that scale intelligently.
+            </p>
+          </motion.div>
+
+          {/* Right Side: Additional Content */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.8 }}
+            className="space-y-6"
+          >
+            {/* Example: 3 service cards */}
+            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:border-purple-500/50 transition-all">
+              <h3 className="text-lg font-bold text-white mb-2">Strategy</h3>
+              <p className="text-gray-300">We craft solutions that fit your business goals and scale intelligently.</p>
+            </div>
+            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:border-purple-500/50 transition-all">
+              <h3 className="text-lg font-bold text-white mb-2">Automation</h3>
+              <p className="text-gray-300">We streamline processes to reduce manual work and increase efficiency.</p>
+            </div>
+            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:border-purple-500/50 transition-all">
+              <h3 className="text-lg font-bold text-white mb-2">Analytics</h3>
+              <p className="text-gray-300">Data-driven insights to make smarter business decisions quickly.</p>
+            </div>
+          </motion.div>
+
+        </div>
+
+
+        {/* Services grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {services.map((service, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              className="group relative"
+            >
+              <div className="relative h-full bg-white/5 backdrop-blur-xl border border-white/20 rounded-3xl p-8 transition-all duration-500 hover:border-purple-500/50 hover:shadow-2xl hover:shadow-purple-500/20 hover:scale-[1.03] hover:bg-white/10">
+
+                <div className="flex flex-col h-full">
+                  {/* Icon + title */}
+                  <div className="mb-6">
+                    <div className="w-24 h-24 bg-white/5 rounded-xl flex items-center justify-center border border-white/10 group-hover:bg-white/10 transition-all duration-300 mb-6 p-3 overflow-hidden">
+                      <img
+                        src={service.imagePath}
+                        alt={service.ariaLabel}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+
+                    <h3 className="text-2xl font-bold text-white mb-2">
+                      {service.title}
+                    </h3>
+                    <p className="text-sm font-medium text-gray-400 mb-4">
+                      {service.subtitle}
+                    </p>
+                    <p className="text-gray-300 leading-relaxed mb-6">
+                      {service.description}
+                    </p>
+                  </div>
+
+                  {/* Feature list */}
+                  <div className="space-y-3 flex-grow">
+                    {service.items.map((item, itemIndex) => (
+                      <div
+                        key={itemIndex}
+                        className="flex items-start gap-3 group/item"
+                      >
+                        <div className="mt-1">
+                          <Check className="w-4 h-4 text-purple-400 group-hover/item:text-purple-300 transition-colors" strokeWidth={2} />
+                        </div>
+                        <span className="text-sm text-gray-400 group-hover/item:text-gray-300 transition-colors">
+                          {item}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Hover glow underline */}
+                <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-transparent via-purple-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
