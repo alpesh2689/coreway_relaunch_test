@@ -10,7 +10,7 @@ const processSteps = [
     title: "Import Images",
     description: "Upload from local storage, cloud services (Dropbox, Google Drive, AWS S3), or connect via FTP/SFTP",
     features: ["Drag & drop interface", "Bulk upload support", "Cloud integration"],
-    color: "from-purple-500 to-purple-700",
+    color: "from-purple-500 to-violet-600",
   },
   {
     number: "02",
@@ -18,7 +18,7 @@ const processSteps = [
     title: "AI Analysis",
     description: "Computer vision algorithms scan each image to identify objects, scenes, faces, colors, and context",
     features: ["Object detection", "Scene recognition", "Facial analysis"],
-    color: "from-pink-500 to-pink-700",
+    color: "from-violet-500 to-purple-600",
   },
   {
     number: "03",
@@ -26,7 +26,7 @@ const processSteps = [
     title: "Smart Processing",
     description: "Extracts metadata, detects duplicates, analyzes quality, and applies your custom organization rules",
     features: ["Metadata extraction", "Duplicate detection", "Quality assessment"],
-    color: "from-blue-500 to-blue-700",
+    color: "from-purple-600 to-violet-500",
   },
   {
     number: "04",
@@ -34,7 +34,7 @@ const processSteps = [
     title: "Auto-Organization",
     description: "Creates logical folder structures, renames files, and applies tags based on content and your preferences",
     features: ["Smart folder creation", "Batch renaming", "Auto-tagging"],
-    color: "from-green-500 to-green-700",
+    color: "from-violet-600 to-purple-500",
   },
   {
     number: "05",
@@ -42,7 +42,7 @@ const processSteps = [
     title: "Review & Refine",
     description: "Preview the organized structure, make adjustments, and approve changes before finalizing",
     features: ["Visual preview", "Manual override", "Undo changes"],
-    color: "from-orange-500 to-orange-700",
+    color: "from-purple-500 to-violet-700",
   },
   {
     number: "06",
@@ -50,16 +50,16 @@ const processSteps = [
     title: "Export & Sync",
     description: "Download organized folders or sync directly to cloud storage with your new structure",
     features: ["Multi-format export", "Cloud sync", "Backup creation"],
-    color: "from-cyan-500 to-cyan-700",
+    color: "from-violet-500 to-purple-700",
   },
 ];
 
 export default function ImageReorgProcess() {
   return (
     <section className="py-20 bg-gradient-to-b from-[#0E0918] to-[#0A0F1E] relative overflow-hidden">
-      <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-5"></div>
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjAyKSIvPjwvZz48L3N2Zz4=')] opacity-20"></div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -90,7 +90,7 @@ export default function ImageReorgProcess() {
                 className="relative group"
               >
                 <div className="relative bg-gradient-to-br from-white/5 to-white/0 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-purple-500/50 transition-all duration-300">
-                  <div className="absolute inset-0 bg-gradient-to-br from-purple-600/5 to-pink-600/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-600/5 to-violet-600/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
 
                   <div className="relative z-10">
                     <div className="flex items-start gap-6 mb-6">
@@ -138,8 +138,8 @@ export default function ImageReorgProcess() {
           transition={{ delay: 0.8 }}
           className="mt-16 text-center"
         >
-          <div className="inline-flex flex-col items-center gap-4 p-8 bg-gradient-to-br from-purple-900/30 to-pink-900/30 border border-purple-500/30 rounded-2xl backdrop-blur-sm">
-            <CheckCircle2 className="w-12 h-12 text-green-400" />
+          <div className="inline-flex flex-col items-center gap-4 p-8 bg-gradient-to-br from-purple-900/30 to-violet-900/30 border border-purple-500/30 rounded-2xl backdrop-blur-sm">
+            <CheckCircle2 className="w-12 h-12 text-purple-400" />
             <p className="text-lg text-white font-semibold">Average processing time: 2-5 minutes for 10,000 images</p>
           </div>
         </motion.div>

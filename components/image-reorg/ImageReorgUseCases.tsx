@@ -10,7 +10,7 @@ const useCases = [
     title: "Wedding & Event Photography",
     description: "Automatically organize thousands of photos from shoots by date, location, and subject. Tag faces, group similar shots, and create client-ready galleries in minutes.",
     results: ["90% faster sorting", "Zero missed photos", "Happy clients"],
-    gradient: "from-purple-500 to-purple-700",
+    gradient: "from-purple-500 to-violet-600",
   },
   {
     icon: <ShoppingBag className="w-8 h-8" />,
@@ -18,7 +18,7 @@ const useCases = [
     title: "Product Catalogs",
     description: "Categorize product images by SKU, category, color, and angle. Detect duplicates, ensure quality standards, and maintain consistent naming across thousands of items.",
     results: ["10x faster uploads", "Consistent quality", "Better SEO"],
-    gradient: "from-pink-500 to-pink-700",
+    gradient: "from-violet-500 to-purple-600",
   },
   {
     icon: <Briefcase className="w-8 h-8" />,
@@ -26,7 +26,7 @@ const useCases = [
     title: "Brand Asset Management",
     description: "Keep client assets organized by campaign, brand, format, and usage rights. Smart tagging makes finding the perfect image instant, even with 100K+ files.",
     results: ["5min to find assets", "Version control", "Rights tracking"],
-    gradient: "from-blue-500 to-blue-700",
+    gradient: "from-purple-600 to-violet-500",
   },
   {
     icon: <Building2 className="w-8 h-8" />,
@@ -34,7 +34,7 @@ const useCases = [
     title: "Property Listings",
     description: "Organize property photos by address, room type, and listing status. Automatically create virtual tour sequences and remove outdated or sold property images.",
     results: ["Faster listings", "Better showcases", "Auto-updates"],
-    gradient: "from-green-500 to-green-700",
+    gradient: "from-violet-600 to-purple-500",
   },
   {
     icon: <Heart className="w-8 h-8" />,
@@ -42,7 +42,7 @@ const useCases = [
     title: "Medical Imaging",
     description: "Securely organize patient scans, X-rays, and diagnostic images with HIPAA compliance. Categorize by patient ID, date, procedure, and body part.",
     results: ["HIPAA compliant", "Instant retrieval", "Audit trails"],
-    gradient: "from-red-500 to-red-700",
+    gradient: "from-purple-500 to-violet-700",
   },
   {
     icon: <Newspaper className="w-8 h-8" />,
@@ -50,16 +50,16 @@ const useCases = [
     title: "News Archives",
     description: "Manage vast photo archives with intelligent tagging by event, person, location, and date. Facial recognition groups photos of the same person across years.",
     results: ["Archive 1M+ photos", "Fast search", "Face grouping"],
-    gradient: "from-orange-500 to-orange-700",
+    gradient: "from-violet-500 to-purple-700",
   },
 ];
 
 export default function ImageReorgUseCases() {
   return (
     <section className="py-20 bg-gradient-to-b from-[#0E0918] to-[#0A0F1E] relative overflow-hidden">
-      <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-5"></div>
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjAyKSIvPjwvZz48L3N2Zz4=')] opacity-20"></div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -89,7 +89,7 @@ export default function ImageReorgUseCases() {
               className="group relative"
             >
               <div className="relative bg-gradient-to-br from-white/5 to-white/0 backdrop-blur-sm border border-white/10 rounded-2xl p-8 h-full hover:border-purple-500/50 transition-all duration-300">
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-600/5 to-pink-600/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-600/5 to-violet-600/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
 
                 <div className="relative z-10">
                   <div
@@ -112,7 +112,7 @@ export default function ImageReorgUseCases() {
                     <div className="text-sm font-semibold text-purple-400 mb-2">Key Results:</div>
                     {useCase.results.map((result, idx) => (
                       <div key={idx} className="flex items-center gap-2">
-                        <div className="w-1.5 h-1.5 bg-green-400 rounded-full"></div>
+                        <div className="w-1.5 h-1.5 bg-purple-400 rounded-full"></div>
                         <span className="text-sm text-gray-400">{result}</span>
                       </div>
                     ))}
@@ -130,13 +130,13 @@ export default function ImageReorgUseCases() {
           transition={{ delay: 0.8 }}
           className="mt-16 text-center"
         >
-          <div className="inline-flex flex-col items-center gap-4 p-8 bg-gradient-to-br from-purple-900/30 to-pink-900/30 border border-purple-500/30 rounded-2xl backdrop-blur-sm">
+          <div className="inline-flex flex-col items-center gap-4 p-8 bg-gradient-to-br from-purple-900/30 to-violet-900/30 border border-purple-500/30 rounded-2xl backdrop-blur-sm">
             <p className="text-xl text-white font-semibold">Don't see your industry?</p>
             <p className="text-gray-300">Our tool is highly customizable for any image management need</p>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="mt-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-xl font-semibold shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 transition-all"
+              className="mt-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-violet-600 text-white rounded-xl font-semibold shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 transition-all"
             >
               Contact Us for Custom Solutions
             </motion.button>

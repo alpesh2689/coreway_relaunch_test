@@ -9,9 +9,9 @@ export default function ImageReorgDemo() {
 
   return (
     <section className="py-20 bg-gradient-to-b from-[#0E0918] to-[#0A0F1E] relative overflow-hidden">
-      <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-5"></div>
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjAyKSIvPjwvZz48L3N2Zz4=')] opacity-20"></div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -35,11 +35,10 @@ export default function ImageReorgDemo() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="max-w-6xl mx-auto"
         >
-          <div className="relative bg-gradient-to-br from-purple-900/20 to-pink-900/20 border border-purple-500/30 rounded-3xl overflow-hidden backdrop-blur-xl">
+          <div className="relative bg-gradient-to-br from-purple-900/20 to-violet-900/20 border border-purple-500/30 rounded-3xl overflow-hidden backdrop-blur-xl">
             <div className="aspect-video relative bg-black/50 flex items-center justify-center group cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-pink-600/20"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-violet-600/20"></div>
 
               {!isPlaying ? (
                 <motion.button
@@ -51,16 +50,14 @@ export default function ImageReorgDemo() {
                   <Play className="w-8 h-8 text-purple-600 ml-1" fill="currentColor" />
                 </motion.button>
               ) : (
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <video
-                    className="w-full h-full object-cover"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                  >
-                    <source src="/videos/image-reorg-demo.mp4" type="video/mp4" />
-                  </video>
+                <div className="absolute inset-0 flex items-center justify-center bg-black">
+                  <iframe
+                    className="w-full h-full"
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+                    title="Image Reorganization Tool Demo"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
                 </div>
               )}
 
@@ -107,8 +104,8 @@ export default function ImageReorgDemo() {
               transition={{ delay: 0.3 }}
               className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6"
             >
-              <div className="w-12 h-12 bg-pink-500/20 rounded-xl flex items-center justify-center mb-4">
-                <Play className="w-6 h-6 text-pink-400" />
+              <div className="w-12 h-12 bg-violet-500/20 rounded-xl flex items-center justify-center mb-4">
+                <Play className="w-6 h-6 text-violet-400" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Step 2: Process</h3>
               <p className="text-gray-300">
@@ -143,7 +140,7 @@ export default function ImageReorgDemo() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-xl font-semibold shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 transition-all inline-flex items-center gap-2"
+              className="px-8 py-4 bg-gradient-to-r from-purple-600 to-violet-600 text-white rounded-xl font-semibold shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 transition-all inline-flex items-center gap-2"
             >
               <Download className="w-5 h-5" />
               Try Free Demo Now

@@ -21,82 +21,82 @@ const features = [
     icon: <Brain className="w-6 h-6" />,
     title: "AI-Powered Recognition",
     description: "Advanced computer vision detects objects, scenes, faces, and context automatically",
-    color: "from-purple-500 to-purple-700",
+    color: "from-purple-500 to-violet-600",
   },
   {
     icon: <FolderTree className="w-6 h-6" />,
     title: "Smart Categorization",
     description: "Automatically creates logical folder structures based on content, date, or custom rules",
-    color: "from-pink-500 to-pink-700",
+    color: "from-violet-500 to-purple-600",
   },
   {
     icon: <Copy className="w-6 h-6" />,
     title: "Duplicate Detection",
     description: "Identifies exact and near-duplicate images using perceptual hashing algorithms",
-    color: "from-blue-500 to-blue-700",
+    color: "from-purple-600 to-violet-500",
   },
   {
     icon: <Tag className="w-6 h-6" />,
     title: "Auto-Tagging",
     description: "Generates relevant tags and keywords from image content and metadata",
-    color: "from-green-500 to-green-700",
+    color: "from-violet-600 to-purple-500",
   },
   {
     icon: <Palette className="w-6 h-6" />,
     title: "Color Analysis",
     description: "Organizes images by dominant colors, palettes, and visual themes",
-    color: "from-orange-500 to-orange-700",
+    color: "from-purple-500 to-violet-700",
   },
   {
     icon: <Filter className="w-6 h-6" />,
     title: "Quality Filtering",
     description: "Automatically filters out blurry, corrupted, or low-quality images",
-    color: "from-cyan-500 to-cyan-700",
+    color: "from-violet-500 to-purple-700",
   },
   {
     icon: <Zap className="w-6 h-6" />,
     title: "Batch Processing",
     description: "Process 100,000+ images simultaneously with parallel processing",
-    color: "from-yellow-500 to-yellow-700",
+    color: "from-purple-600 to-violet-600",
   },
   {
     icon: <Database className="w-6 h-6" />,
     title: "Metadata Extraction",
     description: "Extracts and preserves EXIF data, geolocation, and camera settings",
-    color: "from-indigo-500 to-indigo-700",
+    color: "from-violet-600 to-purple-600",
   },
   {
     icon: <Clock className="w-6 h-6" />,
     title: "Time-Based Sorting",
     description: "Organize by capture date, modification time, or custom date ranges",
-    color: "from-red-500 to-red-700",
+    color: "from-purple-500 to-violet-500",
   },
   {
     icon: <Shield className="w-6 h-6" />,
     title: "Secure Processing",
     description: "End-to-end encryption ensures your images remain private and secure",
-    color: "from-teal-500 to-teal-700",
+    color: "from-violet-500 to-purple-500",
   },
   {
     icon: <ImageIcon className="w-6 h-6" />,
     title: "Format Support",
     description: "Handles JPG, PNG, GIF, WebP, TIFF, BMP, SVG, and RAW formats",
-    color: "from-violet-500 to-violet-700",
+    color: "from-purple-600 to-violet-700",
   },
   {
     icon: <Sparkles className="w-6 h-6" />,
     title: "Custom Rules",
     description: "Define your own organization logic with drag-and-drop rule builder",
-    color: "from-fuchsia-500 to-fuchsia-700",
+    color: "from-violet-600 to-purple-700",
   },
 ];
 
 export default function ImageReorgFeatures() {
   return (
     <section className="py-20 bg-gradient-to-b from-[#0A0F1E] to-[#0E0918] relative overflow-hidden">
-      <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-5"></div>
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjAyKSIvPjwvZz48L3N2Zz4=')] opacity-20"></div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -126,7 +126,7 @@ export default function ImageReorgFeatures() {
               whileHover={{ y: -5 }}
               className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:border-purple-500/50 transition-all duration-300"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-600/5 to-pink-600/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-600/5 to-violet-600/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
 
               <div className="relative z-10">
                 <div

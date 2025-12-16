@@ -5,11 +5,15 @@ import { Images, Sparkles, Zap, FolderTree } from "lucide-react";
 
 export default function ImageReorgHero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#0A0F1E] via-[#0E0918] to-[#1a0b2e] pt-24 pb-16">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/20 via-transparent to-transparent"></div>
-      <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-[#0E0918] via-[#1a1325] to-[#0E0918]">
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-violet-500/10 rounded-full blur-3xl"></div>
+      </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjAyKSIvPjwvZz48L3N2Zz4=')] opacity-20"></div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -28,7 +32,7 @@ export default function ImageReorgHero() {
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               Organize Thousands of Images{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-violet-600">
                 Automatically
               </span>
             </h1>
@@ -56,7 +60,7 @@ export default function ImageReorgHero() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-xl font-semibold shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 transition-all"
+                className="px-8 py-4 bg-gradient-to-r from-purple-600 to-violet-600 text-white rounded-xl font-semibold shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 transition-all"
               >
                 Try Free Demo
               </motion.button>
@@ -76,8 +80,8 @@ export default function ImageReorgHero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative"
           >
-            <div className="relative bg-gradient-to-br from-purple-900/30 to-pink-900/30 border border-purple-500/30 rounded-3xl p-8 backdrop-blur-xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-600/10 to-pink-600/10 rounded-3xl"></div>
+            <div className="relative bg-gradient-to-br from-purple-900/30 to-violet-900/30 border border-purple-500/30 rounded-3xl p-8 backdrop-blur-xl">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-600/10 to-violet-600/10 rounded-3xl"></div>
 
               <div className="relative space-y-6">
                 <div className="flex items-center gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
@@ -91,8 +95,8 @@ export default function ImageReorgHero() {
                 </div>
 
                 <div className="flex items-center gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
-                  <div className="w-12 h-12 bg-pink-500/20 rounded-lg flex items-center justify-center">
-                    <Zap className="w-6 h-6 text-pink-400" />
+                  <div className="w-12 h-12 bg-violet-500/20 rounded-lg flex items-center justify-center">
+                    <Zap className="w-6 h-6 text-violet-400" />
                   </div>
                   <div className="flex-1">
                     <div className="text-sm text-gray-400 mb-1">AI Analysis</div>
@@ -120,7 +124,7 @@ export default function ImageReorgHero() {
                       initial={{ width: 0 }}
                       animate={{ width: "87%" }}
                       transition={{ duration: 2, delay: 0.5 }}
-                      className="h-full bg-gradient-to-r from-purple-500 to-pink-500"
+                      className="h-full bg-gradient-to-r from-purple-500 to-violet-500"
                     />
                   </div>
                 </div>
@@ -128,7 +132,7 @@ export default function ImageReorgHero() {
             </div>
 
             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-purple-500/20 rounded-full blur-3xl"></div>
-            <div className="absolute -top-6 -left-6 w-32 h-32 bg-pink-500/20 rounded-full blur-3xl"></div>
+            <div className="absolute -top-6 -left-6 w-32 h-32 bg-violet-500/20 rounded-full blur-3xl"></div>
           </motion.div>
         </div>
       </div>
