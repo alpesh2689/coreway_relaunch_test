@@ -2,12 +2,14 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { ArrowRight, TrendingUp } from 'lucide-react';
+import Link from 'next/link';
 
 interface CaseStudy {
   id: string;
   title: string;
   image: string;
   description: string;
+  link?: string;
 }
 
 interface AIConsultingCaseStudiesProps {
@@ -65,7 +67,7 @@ export default function AIConsultingCaseStudies({ title, cases }: AIConsultingCa
             const isVisible = visibleCases.includes(caseStudy.id);
             const isActive = activeCase === caseStudy.id;
 
-            return (
+            const content = (
               <article
                 key={caseStudy.id}
                 onMouseEnter={() => setActiveCase(caseStudy.id)}
@@ -125,6 +127,14 @@ export default function AIConsultingCaseStudies({ title, cases }: AIConsultingCa
                   )}
                 </div>
               </article>
+            );
+
+            return caseStudy.link ? (
+              <Link key={caseStudy.id} href={caseStudy.link} className="block">
+                {content}
+              </Link>
+            ) : (
+              content
             );
           })}
         </div>

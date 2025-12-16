@@ -64,6 +64,13 @@
     "title": "AI Transformation Success Stories",
     "cases": [
       {
+        "id": "ai-agent-rag-chatbot",
+        "title": "RAG Chatbot - AI Document Intelligence",
+        "image": "/assets/agent/rag_chatbot.png",
+        "description": "Transform PDFs into intelligent conversational assistants with advanced RAG technology",
+        "link": "/case-studies/ai-agent-rag-chatbot"
+      },
+      {
         "id": "1",
         "title": "Predictive Maintenance AI",
         "image": "https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg",
