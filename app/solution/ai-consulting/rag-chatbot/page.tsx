@@ -481,7 +481,7 @@ export default function RAGChatbotPage() {
                   {/* Image Side */}
                   <div className="relative h-80 md:h-auto overflow-hidden">
                     <img
-                      src="/assets/agent/rag_chatbot.png"
+                      src="/assets/herosection/agent.webp"
                       alt="RAG Chatbot Case Study"
                       className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                     />
