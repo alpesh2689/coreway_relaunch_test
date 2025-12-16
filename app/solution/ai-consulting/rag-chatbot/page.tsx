@@ -449,6 +449,95 @@ export default function RAGChatbotPage() {
           </div>
         </section>
 
+        {/* Case Study Section */}
+        <section className="py-20 bg-[#0E0918]">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="text-center mb-12">
+              <div className="inline-block px-4 py-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full mb-6">
+                <div className="flex items-center gap-2">
+                  <BookOpen className="w-4 h-4 text-purple-400" />
+                  <span className="text-sm font-medium text-gray-300">Success Story</span>
+                </div>
+              </div>
+              <h2 className="text-4xl font-bold text-white mb-4">
+                See RAG Chatbot in Action
+              </h2>
+              <p className="text-xl text-gray-400">
+                Discover how we built a production-ready RAG chatbot for real-world applications
+              </p>
+            </div>
+
+            <Link href="/case-studies/ai-agent-rag-chatbot">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                className="group cursor-pointer relative overflow-hidden rounded-3xl bg-gradient-to-br from-purple-900/20 to-blue-900/20 border border-purple-500/30 hover:border-purple-500/60 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/20"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-600/10 to-blue-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                <div className="grid md:grid-cols-2 gap-0 relative z-10">
+                  {/* Image Side */}
+                  <div className="relative h-80 md:h-auto overflow-hidden">
+                    <img
+                      src="/assets/agent/rag_chatbot.png"
+                      alt="RAG Chatbot Case Study"
+                      className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#0E0918]/80 to-transparent"></div>
+                    <div className="absolute top-6 left-6">
+                      <span className="inline-block px-4 py-2 bg-green-500/90 backdrop-blur-sm text-white rounded-full text-sm font-semibold shadow-lg">
+                        Live Case Study
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Content Side */}
+                  <div className="p-8 md:p-12 flex flex-col justify-center">
+                    <div className="inline-block px-3 py-1 bg-purple-500/20 border border-purple-500/40 rounded-full text-purple-300 text-sm font-semibold mb-4 w-fit">
+                      AI Document Intelligence
+                    </div>
+
+                    <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors duration-300">
+                      RAG Chatbot: Transform PDFs into Intelligent Assistants
+                    </h3>
+
+                    <p className="text-lg text-gray-300 mb-6 leading-relaxed">
+                      Explore our complete implementation of a production-ready RAG chatbot that processes documents, generates embeddings, and provides accurate answers with source citations. Built with N8N, Pinecone, and GPT-4 Turbo.
+                    </p>
+
+                    <div className="grid grid-cols-3 gap-4 mb-8">
+                      <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-4 text-center">
+                        <div className="text-2xl font-bold text-purple-400 mb-1">99.9%</div>
+                        <div className="text-xs text-gray-400">Accuracy</div>
+                      </div>
+                      <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-4 text-center">
+                        <div className="text-2xl font-bold text-blue-400 mb-1">&lt;2s</div>
+                        <div className="text-xs text-gray-400">Response</div>
+                      </div>
+                      <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-4 text-center">
+                        <div className="text-2xl font-bold text-green-400 mb-1">GPT-4</div>
+                        <div className="text-xs text-gray-400">Powered</div>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center gap-3">
+                      <span className="text-purple-400 font-semibold text-lg group-hover:gap-4 transition-all duration-300 flex items-center gap-2">
+                        Read Full Case Study
+                        <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" />
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Bottom Gradient Bar */}
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-500 via-blue-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </motion.div>
+            </Link>
+          </div>
+        </section>
+
         {/* Technical Specifications */}
         <section className="py-20 bg-gradient-to-b from-[#1a0f2b] to-[#0E0918]">
           <div className="max-w-6xl mx-auto px-6">
