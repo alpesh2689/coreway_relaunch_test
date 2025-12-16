@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Images, Sparkles, Zap, FolderTree } from "lucide-react";
+import { Images, Sparkles, Zap, Tag, Palette } from "lucide-react";
 
 export default function ImageReorgHero() {
   return (
@@ -27,32 +27,32 @@ export default function ImageReorgHero() {
               className="inline-flex items-center gap-2 px-4 py-2 bg-purple-500/10 border border-purple-500/30 rounded-full mb-6"
             >
               <Sparkles className="w-4 h-4 text-purple-400" />
-              <span className="text-sm font-semibold text-purple-300">AI-Powered Automation</span>
+              <span className="text-sm font-semibold text-purple-300">AI-Powered Image Analysis</span>
             </motion.div>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              Organize Thousands of Images{" "}
+              Extract Complete Details from{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-violet-600">
-                Automatically
+                Every Image
               </span>
             </h1>
 
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              Transform chaotic image libraries into perfectly organized collections in minutes. Our AI-powered tool analyzes, categorizes, and restructures your images with intelligent automation.
+              Upload any product image and instantly get detailed information. From jewelry materials to clothing colors, our AI identifies every attribute, color, material, and feature automatically.
             </p>
 
             <div className="grid grid-cols-3 gap-4 mb-10">
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 text-center">
-                <div className="text-3xl font-bold text-purple-400 mb-1">99%</div>
+                <div className="text-3xl font-bold text-purple-400 mb-1">50+</div>
+                <div className="text-sm text-gray-400">Attributes</div>
+              </div>
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 text-center">
+                <div className="text-3xl font-bold text-purple-400 mb-1">99.9%</div>
                 <div className="text-sm text-gray-400">Accuracy</div>
               </div>
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 text-center">
-                <div className="text-3xl font-bold text-purple-400 mb-1">10X</div>
-                <div className="text-sm text-gray-400">Faster</div>
-              </div>
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 text-center">
-                <div className="text-3xl font-bold text-purple-400 mb-1">100K+</div>
-                <div className="text-sm text-gray-400">Images/Hour</div>
+                <div className="text-3xl font-bold text-purple-400 mb-1">&lt;2s</div>
+                <div className="text-sm text-gray-400">Processing</div>
               </div>
             </div>
 
@@ -62,14 +62,14 @@ export default function ImageReorgHero() {
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-4 bg-gradient-to-r from-purple-600 to-violet-600 text-white rounded-xl font-semibold shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 transition-all"
               >
-                Try Free Demo
+                Upload & Analyze Image
               </motion.button>
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white border border-white/20 rounded-xl font-semibold hover:bg-white/20 transition-all"
               >
-                Watch Video
+                See Live Demo
               </motion.button>
             </div>
           </motion.div>
@@ -84,45 +84,53 @@ export default function ImageReorgHero() {
               <div className="absolute inset-0 bg-gradient-to-br from-purple-600/10 to-violet-600/10 rounded-3xl"></div>
 
               <div className="relative space-y-6">
+                <div className="text-center mb-6">
+                  <div className="text-sm text-purple-300 font-semibold mb-2">Example: Diamond Ring Analysis</div>
+                  <div className="w-full h-48 bg-white/5 rounded-xl border border-white/10 flex items-center justify-center">
+                    <Images className="w-16 h-16 text-purple-400/50" />
+                    <div className="absolute text-gray-400 text-sm mt-24">Ring Image Here</div>
+                  </div>
+                </div>
+
                 <div className="flex items-center gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
                   <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center">
-                    <Images className="w-6 h-6 text-purple-400" />
+                    <Tag className="w-6 h-6 text-purple-400" />
                   </div>
                   <div className="flex-1">
-                    <div className="text-sm text-gray-400 mb-1">Processing</div>
-                    <div className="text-white font-semibold">15,847 images detected</div>
+                    <div className="text-sm text-gray-400 mb-1">Material Detected</div>
+                    <div className="text-white font-semibold">Metal: 18K Gold, Stone: Diamond</div>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
                   <div className="w-12 h-12 bg-violet-500/20 rounded-lg flex items-center justify-center">
-                    <Zap className="w-6 h-6 text-violet-400" />
+                    <Palette className="w-6 h-6 text-violet-400" />
                   </div>
                   <div className="flex-1">
-                    <div className="text-sm text-gray-400 mb-1">AI Analysis</div>
-                    <div className="text-white font-semibold">Categorizing by content</div>
+                    <div className="text-sm text-gray-400 mb-1">Colors Identified</div>
+                    <div className="text-white font-semibold">Gold #FFD700, Clear Diamond</div>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
-                  <div className="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center">
-                    <FolderTree className="w-6 h-6 text-green-400" />
+                  <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center">
+                    <Zap className="w-6 h-6 text-purple-400" />
                   </div>
                   <div className="flex-1">
-                    <div className="text-sm text-gray-400 mb-1">Organizing</div>
-                    <div className="text-white font-semibold">Creating 24 folders</div>
+                    <div className="text-sm text-gray-400 mb-1">Details Extracted</div>
+                    <div className="text-white font-semibold">Cut: Round, Carat: 1.5, Clarity: VS1</div>
                   </div>
                 </div>
 
                 <div className="pt-4 border-t border-white/10">
                   <div className="flex justify-between text-sm mb-2">
-                    <span className="text-gray-400">Progress</span>
-                    <span className="text-purple-400 font-semibold">87%</span>
+                    <span className="text-gray-400">Analysis Complete</span>
+                    <span className="text-green-400 font-semibold">✓ 100%</span>
                   </div>
                   <div className="w-full bg-white/5 rounded-full h-2 overflow-hidden">
                     <motion.div
                       initial={{ width: 0 }}
-                      animate={{ width: "87%" }}
+                      animate={{ width: "100%" }}
                       transition={{ duration: 2, delay: 0.5 }}
                       className="h-full bg-gradient-to-r from-purple-500 to-violet-500"
                     />
