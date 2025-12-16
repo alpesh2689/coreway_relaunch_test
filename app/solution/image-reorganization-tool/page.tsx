@@ -29,10 +29,10 @@ export default function ImageReorganizationToolPage() {
       </div>
 
       <SubHeader title="Image Reorganization Tool" items={subHeaderItems} />
-
+{/* 
       <div id="demo">
         <ImageReorgDemo />
-      </div>
+      </div> */}
 
       <div id="features">
         <ImageReorgFeatures />

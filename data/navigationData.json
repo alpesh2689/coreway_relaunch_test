@@ -120,6 +120,11 @@
               "label": "Ai chat pdf",
               "href": "/solution/ai-chat-with-pdf",
               "icon": "shield"
+            },
+              {
+              "label": "RAG Chatbot",
+              "href": "/solution/rag-chatbot",
+              "icon": "plug"
             }
           ]
         },

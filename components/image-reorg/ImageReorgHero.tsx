@@ -86,7 +86,9 @@ export default function ImageReorgHero() {
               <div className="relative aspect-[4/5] bg-gradient-to-br from-gray-900 to-black flex items-center justify-center">
                 <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjA1KSIvPjwvZz48L3N2Zz4=')] opacity-30"></div>
 
-                <Images className="w-48 h-48 text-purple-400/30" />
+                {/* <Images className="w-48 h-48 text-purple-400/30" />
+                 */}
+                 <img src="/assets/agent/neckless.jpg" alt="Diamond Ring" className="w-48 h-48 object-cover rounded-lg shadow-lg" />
                 <div className="absolute text-purple-300/50 text-lg font-semibold">Diamond Ring Image</div>
 
                 <motion.div
