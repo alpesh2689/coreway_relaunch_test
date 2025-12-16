@@ -23,10 +23,10 @@ export default function ImageReorgDemo() {
             Live Demo
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            See It in Action
+            Watch AI Extract Product Details
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Watch how our AI-powered tool processes, analyzes, and reorganizes thousands of images in real-time
+            See how our AI analyzes a ring image and extracts complete product information in real-time
           </p>
         </motion.div>
 
@@ -93,7 +93,7 @@ export default function ImageReorgDemo() {
               </div>
               <h3 className="text-xl font-bold text-white mb-2">Step 1: Upload</h3>
               <p className="text-gray-300">
-                Drag and drop your image folders or connect to cloud storage services
+                Upload your product image - supports JPG, PNG, WebP, and HEIC formats
               </p>
             </motion.div>
 
@@ -107,9 +107,9 @@ export default function ImageReorgDemo() {
               <div className="w-12 h-12 bg-violet-500/20 rounded-xl flex items-center justify-center mb-4">
                 <Play className="w-6 h-6 text-violet-400" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-2">Step 2: Process</h3>
+              <h3 className="text-xl font-bold text-white mb-2">Step 2: AI Analysis</h3>
               <p className="text-gray-300">
-                AI analyzes content, extracts metadata, and intelligently categorizes
+                Our AI identifies materials, colors, patterns, and detailed product attributes
               </p>
             </motion.div>
 
@@ -123,9 +123,9 @@ export default function ImageReorgDemo() {
               <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center mb-4">
                 <CheckCircle2 className="w-6 h-6 text-green-400" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-2">Step 3: Export</h3>
+              <h3 className="text-xl font-bold text-white mb-2">Step 3: Get Results</h3>
               <p className="text-gray-300">
-                Download organized folders or sync directly to your preferred platform
+                Receive detailed information in JSON, CSV, or integrate directly via API
               </p>
             </motion.div>
           </div>
@@ -142,8 +142,8 @@ export default function ImageReorgDemo() {
               whileTap={{ scale: 0.95 }}
               className="px-8 py-4 bg-gradient-to-r from-purple-600 to-violet-600 text-white rounded-xl font-semibold shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 transition-all inline-flex items-center gap-2"
             >
-              <Download className="w-5 h-5" />
-              Try Free Demo Now
+              <Upload className="w-5 h-5" />
+              Try It Now - Free
             </motion.button>
           </motion.div>
         </motion.div>

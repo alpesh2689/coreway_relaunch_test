@@ -108,10 +108,10 @@ export default function ImageReorgFeatures() {
             Powerful Features
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Everything You Need to Manage Images
+            Extract Every Detail Automatically
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Enterprise-grade features designed to handle any image organization challenge at scale
+            Our AI identifies and extracts comprehensive product information from any image
           </p>
         </motion.div>
 
@@ -149,12 +149,49 @@ export default function ImageReorgFeatures() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.6 }}
-          className="mt-16 text-center"
+          transition={{ delay: 0.8 }}
+          className="mt-16 max-w-4xl mx-auto"
         >
-          <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-900/30 to-pink-900/30 border border-purple-500/30 rounded-full">
-            <Sparkles className="w-5 h-5 text-purple-400" />
-            <span className="text-white font-semibold">And many more features...</span>
+          <div className="bg-gradient-to-br from-purple-900/30 to-violet-900/30 border border-purple-500/30 rounded-2xl p-8 backdrop-blur-sm">
+            <div className="text-center">
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">
+                Supported Product Categories
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                <div className="bg-white/5 rounded-xl p-4">
+                  <div className="text-purple-400 font-semibold mb-1">Jewelry</div>
+                  <div className="text-gray-400 text-xs">Rings, Necklaces, Watches</div>
+                </div>
+                <div className="bg-white/5 rounded-xl p-4">
+                  <div className="text-purple-400 font-semibold mb-1">Fashion</div>
+                  <div className="text-gray-400 text-xs">Clothing, Shoes, Accessories</div>
+                </div>
+                <div className="bg-white/5 rounded-xl p-4">
+                  <div className="text-purple-400 font-semibold mb-1">Electronics</div>
+                  <div className="text-gray-400 text-xs">Devices, Gadgets, Parts</div>
+                </div>
+                <div className="bg-white/5 rounded-xl p-4">
+                  <div className="text-purple-400 font-semibold mb-1">Home Goods</div>
+                  <div className="text-gray-400 text-xs">Furniture, Decor, Appliances</div>
+                </div>
+                <div className="bg-white/5 rounded-xl p-4">
+                  <div className="text-purple-400 font-semibold mb-1">Automotive</div>
+                  <div className="text-gray-400 text-xs">Parts, Accessories, Tools</div>
+                </div>
+                <div className="bg-white/5 rounded-xl p-4">
+                  <div className="text-purple-400 font-semibold mb-1">Beauty</div>
+                  <div className="text-gray-400 text-xs">Cosmetics, Skincare, Fragrance</div>
+                </div>
+                <div className="bg-white/5 rounded-xl p-4">
+                  <div className="text-purple-400 font-semibold mb-1">Sports</div>
+                  <div className="text-gray-400 text-xs">Equipment, Apparel, Gear</div>
+                </div>
+                <div className="bg-white/5 rounded-xl p-4">
+                  <div className="text-purple-400 font-semibold mb-1">Art & Collectibles</div>
+                  <div className="text-gray-400 text-xs">Paintings, Sculptures, Antiques</div>
+                </div>
+              </div>
+            </div>
           </div>
         </motion.div>
       </div>

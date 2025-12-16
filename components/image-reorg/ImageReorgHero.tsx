@@ -80,62 +80,77 @@ export default function ImageReorgHero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative"
           >
-            <div className="relative bg-gradient-to-br from-purple-900/30 to-violet-900/30 border border-purple-500/30 rounded-3xl p-8 backdrop-blur-xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-600/10 to-violet-600/10 rounded-3xl"></div>
+            <div className="relative rounded-3xl overflow-hidden border border-purple-500/30 shadow-2xl">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-violet-600/20"></div>
 
-              <div className="relative space-y-6">
-                <div className="text-center mb-6">
-                  <div className="text-sm text-purple-300 font-semibold mb-2">Example: Diamond Ring Analysis</div>
-                  <div className="w-full h-48 bg-white/5 rounded-xl border border-white/10 flex items-center justify-center">
-                    <Images className="w-16 h-16 text-purple-400/50" />
-                    <div className="absolute text-gray-400 text-sm mt-24">Ring Image Here</div>
-                  </div>
-                </div>
+              <div className="relative aspect-[4/5] bg-gradient-to-br from-gray-900 to-black flex items-center justify-center">
+                <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjA1KSIvPjwvZz48L3N2Zz4=')] opacity-30"></div>
 
-                <div className="flex items-center gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
-                  <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center">
-                    <Tag className="w-6 h-6 text-purple-400" />
-                  </div>
-                  <div className="flex-1">
-                    <div className="text-sm text-gray-400 mb-1">Material Detected</div>
-                    <div className="text-white font-semibold">Metal: 18K Gold, Stone: Diamond</div>
-                  </div>
-                </div>
+                <Images className="w-48 h-48 text-purple-400/30" />
+                <div className="absolute text-purple-300/50 text-lg font-semibold">Diamond Ring Image</div>
 
-                <div className="flex items-center gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
-                  <div className="w-12 h-12 bg-violet-500/20 rounded-lg flex items-center justify-center">
-                    <Palette className="w-6 h-6 text-violet-400" />
-                  </div>
-                  <div className="flex-1">
-                    <div className="text-sm text-gray-400 mb-1">Colors Identified</div>
-                    <div className="text-white font-semibold">Gold #FFD700, Clear Diamond</div>
-                  </div>
-                </div>
+                <motion.div
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.8 }}
+                  className="absolute top-6 left-6 right-6"
+                >
+                  <div className="bg-black/60 backdrop-blur-xl border border-white/10 rounded-2xl p-4 shadow-2xl">
+                    <div className="flex items-center justify-between mb-3">
+                      <span className="text-xs text-purple-300 font-semibold uppercase tracking-wider">AI Analysis</span>
+                      <span className="text-xs text-green-400 font-semibold">✓ Complete</span>
+                    </div>
 
-                <div className="flex items-center gap-4 p-4 bg-white/5 rounded-xl border border-white/10">
-                  <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center">
-                    <Zap className="w-6 h-6 text-purple-400" />
-                  </div>
-                  <div className="flex-1">
-                    <div className="text-sm text-gray-400 mb-1">Details Extracted</div>
-                    <div className="text-white font-semibold">Cut: Round, Carat: 1.5, Clarity: VS1</div>
-                  </div>
-                </div>
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-3">
+                        <Tag className="w-4 h-4 text-purple-400 flex-shrink-0" />
+                        <div className="flex-1 min-w-0">
+                          <div className="text-xs text-gray-400">Material</div>
+                          <div className="text-sm text-white font-semibold truncate">18K Gold, Diamond</div>
+                        </div>
+                      </div>
 
-                <div className="pt-4 border-t border-white/10">
-                  <div className="flex justify-between text-sm mb-2">
-                    <span className="text-gray-400">Analysis Complete</span>
-                    <span className="text-green-400 font-semibold">✓ 100%</span>
+                      <div className="flex items-center gap-3">
+                        <Palette className="w-4 h-4 text-violet-400 flex-shrink-0" />
+                        <div className="flex-1 min-w-0">
+                          <div className="text-xs text-gray-400">Colors</div>
+                          <div className="text-sm text-white font-semibold truncate">
+                            <span className="inline-block w-3 h-3 rounded-full bg-yellow-500 mr-1"></span>
+                            Gold #FFD700
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="flex items-center gap-3">
+                        <Zap className="w-4 h-4 text-purple-400 flex-shrink-0" />
+                        <div className="flex-1 min-w-0">
+                          <div className="text-xs text-gray-400">Details</div>
+                          <div className="text-sm text-white font-semibold truncate">Round Cut, 1.5ct, VS1</div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div className="w-full bg-white/5 rounded-full h-2 overflow-hidden">
-                    <motion.div
-                      initial={{ width: 0 }}
-                      animate={{ width: "100%" }}
-                      transition={{ duration: 2, delay: 0.5 }}
-                      className="h-full bg-gradient-to-r from-purple-500 to-violet-500"
-                    />
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: 1.2 }}
+                  className="absolute bottom-6 left-6 right-6 flex gap-2"
+                >
+                  <div className="flex-1 bg-black/60 backdrop-blur-xl border border-white/10 rounded-xl p-3 text-center">
+                    <div className="text-xs text-gray-400 mb-1">Confidence</div>
+                    <div className="text-lg font-bold text-purple-400">99.8%</div>
                   </div>
-                </div>
+                  <div className="flex-1 bg-black/60 backdrop-blur-xl border border-white/10 rounded-xl p-3 text-center">
+                    <div className="text-xs text-gray-400 mb-1">Attributes</div>
+                    <div className="text-lg font-bold text-violet-400">15+</div>
+                  </div>
+                  <div className="flex-1 bg-black/60 backdrop-blur-xl border border-white/10 rounded-xl p-3 text-center">
+                    <div className="text-xs text-gray-400 mb-1">Time</div>
+                    <div className="text-lg font-bold text-purple-400">1.8s</div>
+                  </div>
+                </motion.div>
               </div>
             </div>
 
